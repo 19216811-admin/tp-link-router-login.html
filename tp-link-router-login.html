@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP-Link Router Login</title>
+    <meta name="description"
+        content="Log in to your TP-Link router using 192.168.1.1 or 192.168.0.1. Manage Wi-Fi settings, change passwords, and troubleshoot TP-Link router issues easily..">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/theme-toggle.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="static/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="static/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="static/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="static/favicon/site.webmanifest" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://19216811-admin.github.io/tp-link-router-login.html/">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://19216811-admin.github.io/tp-link-router-login.html/"
+      },
+      "headline": "TP-Link Router Login",
+      "description": "Log in to your TP-Link router using 192.168.1.1 or 192.168.0.1. Manage Wi-Fi settings, change passwords, and troubleshoot TP-Link router issues easily.",
+      "image": "https://19216811-admin.github.io/static/img/router-login-screenshots/tp-link-login.svg",
+      "author": {
+        "@type": "Organization",
+        "name": "192.168.1.1 Admin",
+        "url": "https://19216811-admin.github.io/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Router Login Guide",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://19216811-admin.github.io/static/favicon/favicon-96x96.png"
+        }
+      },
+      "datePublished": "2024-12-01",
+      "dateModified": "2025-04-25"
+    }
+    </script>
+
+    
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/">192.168.1.1 Admin</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/router-brands.html">Router Brands</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            How-to Guides
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/how-to-change-your-wifi-password.html">Change WiFi
+                                    Password</a></li>
+                            <li><a class="dropdown-item" href="/how-to-setup-port-forwarding-on-your-router.html">Port
+                                    Forwarding</a></li>
+                            <li><a class="dropdown-item" href="/how-to-set-up-a-guest-wifi-network.html">Guest Network
+                                    Setup</a></li>
+                            <li><a class="dropdown-item"
+                                    href="/how-to-configure-parental-controls-on-your-router.html">Parental Controls</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/ip-lookup.html">IP Lookup</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="themeDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-sun me-1"></i> Theme
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown">
+                            <li><a class="dropdown-item" href="#" id="light-mode"><i class="fas fa-sun me-2"></i>Light
+                                    Mode</a></li>
+                            <li><a class="dropdown-item" href="#" id="dark-mode"><i class="fas fa-moon me-2"></i>Dark
+                                    Mode</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-4">
+        <div class="row g-4">
+            <div class="col-lg-8">
+                <!-- Page Title and Quick Login Section -->
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h1 class="mb-0">TP-Link Router Login Guide</h1>
+                    </div>
+                    <div class="card-body">
+                        <p class="lead">Access your TP-Link router's admin panel with our comprehensive guide.</p>
+
+                        <!-- Quick Access Buttons -->
+                        <div class="direct-login-section mb-4">
+                            <h2 class="h4 mb-3">Quick Access: Direct IP Login</h2>
+                            <div class="d-flex flex-wrap gap-2">
+                                <a href="http://192.168.0.1" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-lg btn-primary">
+                                    <i class="fas fa-sign-in-alt me-2"></i> 192.168.0.1
+                                </a>
+                                <a href="http://192.168.1.1" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-lg btn-primary">
+                                    <i class="fas fa-sign-in-alt me-2"></i> 192.168.1.1
+                                </a>
+                                <a href="http://tplinkwifi.net" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-lg btn-primary">
+                                    <i class="fas fa-sign-in-alt me-2"></i> tplinkwifi.net
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Default Credentials Box -->
+                        <div class="alert alert-info">
+                            <h3 class="h5">Default Login Credentials:</h3>
+                            <ul class="mb-0">
+                                <li><strong>Username:</strong> admin</li>
+                                <li><strong>Password:</strong> admin</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Login Steps -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h2>Step-by-Step Login Instructions</h2>
+                    </div>
+                    <div class="card-body">
+                        <ol class="login-steps">
+                            <li class="mb-4">
+                                <h3 class="h5">Connect to Your TP-Link Network</h3>
+                                <p>Connect your device to the TP-Link router via WiFi or ethernet cable.</p>
+                            </li>
+                            <li class="mb-4">
+                                <h3 class="h5">Access the Login Page</h3>
+                                <p>Open a web browser and enter one of these addresses:</p>
+                                <ul>
+                                    <li>192.168.0.1</li>
+                                    <li>192.168.1.1</li>
+                                    <li>tplinkwifi.net</li>
+                                </ul>
+                            </li>
+                            <li class="mb-4">
+                                <h3 class="h5">Enter Login Credentials</h3>
+                                <p>Enter the default username and password:</p>
+                                <div class="text-center my-4">
+                                    <img src="/static/img/router-login-screenshots/tp-link-login.svg"
+                                        alt="Tenda Router Login Screen" class="img-fluid rounded border"
+                                        style="max-width: 400px;">
+                                </div>
+                                <div class="login-credentials p-3 bg-light rounded">
+                                    <p class="mb-1">Username: <strong>admin</strong></p>
+                                    <p class="mb-0">Password: <strong>admin</strong></p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- Troubleshooting Section -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h2 class="mb-0">TP-Link Router Troubleshooting</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="accordion" id="tplinkTroubleshooting">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Cannot Access TP-Link Login Page
+                                    </button>
+                                </h3>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#tplinkTroubleshooting">
+                                    <div class="accordion-body">
+                                        <p>If you can't reach the login page, try these solutions:</p>
+                                        <ol>
+                                            <li><strong>Check your connection:</strong> Ensure your device is connected
+                                                to the TP-Link network.</li>
+                                            <li><strong>Try alternative IP addresses:</strong> Common IPs include
+                                                <code>192.168.0.1</code> and <code>192.168.1.1</code>.</li>
+                                            <li><strong>Reset network settings:</strong>
+                                                <ul>
+                                                    <li>Windows: Open Command Prompt as administrator and run
+                                                        <code>ipconfig /release</code> and <code>ipconfig /renew</code>
+                                                    </li>
+                                                    <li>Mac: Go to System Preferences > Network > Advanced > TCP/IP >
+                                                        Renew DHCP Lease</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Use incognito/private browsing:</strong> Cached data can
+                                                interfere with login pages.</li>
+                                            <li><strong>Disable other networks:</strong> Turn off any other active Wi-Fi
+                                                or mobile connections.</li>
+                                            <li><strong>Check cables:</strong> If you're using Ethernet, make sure
+                                                cables are firmly connected.</li>
+                                        </ol>
+                                        <div class="alert alert-primary mt-3">
+                                            <strong>TP-Link Tip:</strong> Some TP-Link routers support a Tether app. If
+                                            the web login fails, try accessing your router using the TP-Link Tether
+                                            mobile app.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Password Not Working / Forgotten Password
+                                    </button>
+                                </h3>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#tplinkTroubleshooting">
+                                    <div class="accordion-body">
+                                        <p>If the default password doesn't work or you've forgotten your custom
+                                            password:</p>
+                                        <ol>
+                                            <li><strong>Try common TP-Link default combinations:</strong>
+                                                <ul>
+                                                    <li>Username: <code>admin</code> | Password: <code>admin</code></li>
+                                                    <li>Username: <code>admin</code> | Password: <code>password</code>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Check router label:</strong> Look for default login details on a
+                                                label located on the bottom or back of your TP-Link router.</li>
+                                            <li><strong>Factory reset the router:</strong> If none of the above work:
+                                                <ol>
+                                                    <li>Find the reset button on your TP-Link router (usually at the
+                                                        back)</li>
+                                                    <li>Ensure the router is powered on</li>
+                                                    <li>Press and hold the reset button for 10 seconds using a pin or
+                                                        paperclip</li>
+                                                    <li>Release when the router’s LEDs flash or blink</li>
+                                                    <li>Wait 2-3 minutes for the router to reboot</li>
+                                                    <li>Try logging in using default credentials</li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                        <div class="alert alert-danger">
+                                            <strong>Warning:</strong> Resetting the router will delete all your
+                                            personalized settings, including your WiFi name, password, and parental
+                                            controls.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Slow or Unstable TP-Link WiFi Connection
+                                    </button>
+                                </h3>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#tplinkTroubleshooting">
+                                    <div class="accordion-body">
+                                        <p>If your TP-Link WiFi is slow or drops frequently, try these solutions:</p>
+                                        <ol>
+                                            <li><strong>Update router firmware:</strong>
+                                                <ol>
+                                                    <li>Log in to your TP-Link router admin panel</li>
+                                                    <li>Go to <strong>System Tools</strong> > <strong>Firmware
+                                                            Upgrade</strong></li>
+                                                    <li>Click <strong>Check for Upgrade</strong> or upload firmware
+                                                        manually from <a
+                                                            href="https://www.tp-link.com/support/download/"
+                                                            target="_blank">TP-Link's official site</a></li>
+                                                </ol>
+                                            </li>
+                                            <li><strong>Change wireless channel:</strong>
+                                                <ol>
+                                                    <li>Go to <strong>Wireless Settings</strong></li>
+                                                    <li>Under <strong>Channel</strong>, select 1, 6, or 11 (for 2.4GHz)
+                                                        or try 36, 40, 44, or 48 (for 5GHz)</li>
+                                                </ol>
+                                            </li>
+                                            <li><strong>Enable QoS (Quality of Service):</strong> Limit bandwidth-heavy
+                                                devices to prioritize streaming or gaming devices.</li>
+                                            <li><strong>Avoid interference:</strong> Place your TP-Link router away
+                                                from:
+                                                <ul>
+                                                    <li>Microwaves</li>
+                                                    <li>Bluetooth speakers</li>
+                                                    <li>Cordless phones</li>
+                                                    <li>Walls and metal appliances</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                        <div class="alert alert-success mt-3">
+                                            <strong>TP-Link Advantage:</strong> Many TP-Link routers feature MU-MIMO and
+                                            Beamforming, which enhance connection stability and speed. Position antennas
+                                            upright and place the router in a central, open spot for best results.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Popular Models -->
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Popular TP-Link Router Models</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-header">
+                                        <h3 class="h5 mb-0">Archer Series</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <p><strong>Models:</strong> C6, AX3000, AX6000</p>
+                                        <p class="mb-0"><strong>Default IP:</strong> 192.168.0.1</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-header">
+                                        <h3 class="h5 mb-0">Deco Series</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <p><strong>Models:</strong> M5, M9 Plus, X20</p>
+                                        <p class="mb-0"><strong>Managed via:</strong> Deco App</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <!-- Quick Reference -->
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h3 class="h5 mb-0">Quick Reference</h3>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered mb-0">
+                            <tbody>
+                                <tr>
+                                    <th>Default IPs</th>
+                                    <td>192.168.0.1<br>192.168.1.1</td>
+                                </tr>
+                                <tr>
+                                    <th>Username</th>
+                                    <td>admin</td>
+                                </tr>
+                                <tr>
+                                    <th>Password</th>
+                                    <td>admin</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Related Guides -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3 class="h5 mb-0">Related Router Guides</h3>
+                    </div>
+                    <div class="list-group list-group-flush">
+                        <a href="/how-to-change-your-wifi-password.html"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            How to Change WiFi Password
+                            <span class="badge bg-primary rounded-pill"><i class="fas fa-arrow-right"></i></span>
+                        </a>
+                        <a href="/how-to-setup-port-forwarding-on-your-router.html"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Port Forwarding Guide
+                            <span class="badge bg-primary rounded-pill"><i class="fas fa-arrow-right"></i></span>
+                        </a>
+                        <a href="/"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Update Router Firmware
+                            <span class="badge bg-primary rounded-pill"><i class="fas fa-arrow-right"></i></span>
+                        </a>
+                        <a href="/how-to-set-up-a-guest-wifi-network.html"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Setup Guest Network
+                            <span class="badge bg-primary rounded-pill"><i class="fas fa-arrow-right"></i></span>
+                        </a>
+                        <a href="/how-to-configure-parental-controls-on-your-router.html"
+                            class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Configure Parental Controls
+                            <span class="badge bg-primary rounded-pill"><i class="fas fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Security Tips -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3 class="h5 mb-0">Tp-Link Router Security Tips</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <i class="fas fa-lock text-primary me-2"></i> <strong>Change default admin
+                                    password</strong> immediately after setup
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-wifi text-primary me-2"></i> <strong>Use WPA2/WPA3 encryption</strong>
+                                for your WiFi network
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-code-branch text-primary me-2"></i> <strong>Update firmware</strong>
+                                regularly via the System menu
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-broadcast-tower text-primary me-2"></i> <strong>Disable remote
+                                    management</strong> unless needed
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-user-shield text-primary me-2"></i> <strong>Enable MAC address
+                                    filtering</strong> for enhanced security
+                            </li>
+                        </ul>
+                        <div class="alert alert-info mt-3">
+                            <strong>Tp-Link-Specific:</strong> Some Tp-Link routers have a "WiFi Schedule" feature that
+                            lets
+                            you automatically turn off WiFi during hours when you're not home, reducing security risks.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Theme Toggle Floating Button -->
+    <button id="theme-toggle-float" class="theme-toggle-float btn">
+        <i class="fas fa-moon"></i>
+    </button>
+    <!-- Footer -->
+    <footer class="footer py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="footer-heading">Router Login Guide</h5>
+                    <p class="footer-text">A comprehensive resource for router login information, networking
+                        guides, and
+                        troubleshooting tips.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/" class="footer-link">Home</a></li>
+                        <li><a href="/" class="footer-link">Router Login Guides</a></li>
+                        <li><a href="/" class="footer-link">IP Lookup Tool</a></li>
+                        <li><a href="/" class="footer-link">Troubleshooting Guides</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="footer-heading">Popular Routers IPs</h5>
+                    <ul class="list-unstyled popular-routers-list">
+                        <li><a href="/http://192.168.1.1/" class="footer-link">192.168.1.1</a></li>
+                        <li><a href="/http://192.168.0.1/" class="footer-link">192.168.0.1</a></li>
+                        <li><a href="/http://10.0.0.1/" class="footer-link">10.0.0.1</a></li>
+                        <li><a href="/http://192.168.2.1/" class="footer-link">192.168.2.1</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0 footer-text">&copy; 2025 Router Login Guide. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">
+                        <a href="/privacy-policy.html" class="footer-link me-2">Privacy Policy</a> |
+                        <a href="/contact-us.html" class="footer-link">Contact Us</a> |
+                        <a href="/terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Theme Toggle -->
+    <script src="/static/js/theme-toggle.js"></script>
+    <!-- Custom Scripts -->
+    <script src="/static/js/main.js"></script>
+
+</body>
+
+</html>
+
+<style>
+    .login-steps {
+        counter-reset: step-counter;
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .login-steps>li {
+        position: relative;
+        padding-left: 45px;
+        margin-bottom: 1.5rem;
+    }
+
+    .login-steps>li::before {
+        content: counter(step-counter);
+        counter-increment: step-counter;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: var(--bs-primary);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+</style>
